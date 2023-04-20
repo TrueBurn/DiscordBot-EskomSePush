@@ -43,7 +43,8 @@ public static class ServiceCollectionSetup
     private static IServiceCollection ConfigureBotOptions(this IServiceCollection services)
     {
         IConfigurationBuilder configBuilder = new ConfigurationBuilder()
-            .AddEnvironmentVariables();
+            .AddEnvironmentVariables()
+            .AddUserSecrets<Program>();
 
         IConfigurationRoot config = configBuilder.Build();
 
