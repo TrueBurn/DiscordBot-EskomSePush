@@ -3,7 +3,7 @@ using Discord.Commands;
 
 namespace TrueBurn.DiscordBot.EskomSePush.Modules;
 
-public  class HelpCommand : ModuleBase<SocketCommandContext>
+public class HelpCommand : ModuleBase<SocketCommandContext>
 {
 
     [Command("help")]
